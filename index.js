@@ -13,5 +13,11 @@ function operacion() {
 
 function resetear() {
     document.getElementById('resultado').value = " ";
-    
+}
+
+function borrar() {
+    let resultado = document.getElementById('resultado').value;
+    let nuevoResultado = resultado.slice(0, -1); //esto es para eliminar último digito
+
+    document.getElementById('resultado').value = nuevoResultado; 
 }

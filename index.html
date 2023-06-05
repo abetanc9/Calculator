@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <div class="body-calculadora">
@@ -35,17 +36,17 @@
         </div>
 
         <div class="num-container">
-            <button class="s-button" onclick="resetear()">C</button>
+            <button class="s-button" onclick="resetear()"> <i class="fas fa-trash"></i> </button>
             <button class="s-button" onclick="numeros(0)">0</button>
             <button class="s-button" onclick="numeros('.')">.</button>
             <button class="s-button" onclick="numeros('*')">x</button>
         </div>
 
-        <div class="num-container-2">
+        <div class="num-container">
             <button class="s-button" onclick="numeros('<')"><</button>
             <button class="s-button" onclick="numeros('>')">></button>
-            <button class="s-button-2" onclick="operacion()">=</button>
-            
+            <button class="s-button-3" onclick="borrar()"> <i class="fas fa-arrow-left"></i> </button>
+            <button class="s-button-2" onclick="operacion()">=</button>            
         </div>
     </div>
     
